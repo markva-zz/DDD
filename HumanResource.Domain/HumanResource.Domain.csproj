@@ -64,10 +64,10 @@
     <Compile Include="ValueObjects\ContactInfo.cs" />
     <Compile Include="ValueObjects\DriverLicense.cs" />
     <Compile Include="Specifications\ISpecification.cs" />
+    <Compile Include="ValueObjects\JobApplicationKey.cs" />
     <Compile Include="ValueObjects\Mcp.cs" />
     <Compile Include="Specifications\StaffManagerJobSpecification.cs" />
     <Compile Include="Specifications\SoftwareDeveloperJobSpecification.cs" />
-    <Compile Include="ValueObjects\Certificate.cs" />
     <Compile Include="ValueObjects\Job.cs" />
   </ItemGroup>
   <ItemGroup>

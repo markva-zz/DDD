@@ -5,6 +5,7 @@ using System.Text;
 using HumanResource.Domain.Repositories;
 using HumanResource.Domain.Entities;
 using HumanResource.Domain.Specifications;
+using HumanResource.Domain.ValueObjects;
 
 namespace HumanResource.Infrastructure
 {
@@ -30,5 +31,15 @@ namespace HumanResource.Infrastructure
         {
             Console.Write("Using {0}\n", this.GetType().ToString());
         }
+
+        #region IJobApplicationRepository Members
+
+
+        public JobApplication Find(JobApplicationKey key)
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
     }
 }
