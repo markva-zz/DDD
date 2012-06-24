@@ -48,6 +48,7 @@
     <Compile Include="Events\IEvent.cs" />
     <Compile Include="Events\JobApplicationRegistredEvent.cs" />
     <Compile Include="Events\PersonHiredEvent.cs" />
+    <Compile Include="Factories\JobApplicationFactory.cs" />
     <Compile Include="Policies\EmploymentPolicy.cs" />
     <Compile Include="Policies\IPolicy.cs" />
     <Compile Include="Policies\PolicyBase.cs" />

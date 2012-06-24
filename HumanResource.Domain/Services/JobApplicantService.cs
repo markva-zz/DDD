@@ -18,12 +18,20 @@ namespace HumanResource.Domain.Services
             this.jobApplicationRepository = jobApplicationRepository;
         }
 
+        public virtual JobApplication Create()
+        {
+            return new JobApplication();
+        }
+
         public virtual void Submit(JobApplication jobApplication)
         {
             // evaluate business rules/policies
             RuleBase minHireAge = new MinimumHireAgeRule(jobApplication.Age);
             if (!minHireAge.IsValid())
                 throw new ApplicationException(String.Format("{0} was violated", minHireAge.Description));
+            
+            // stamp today's date
+            jobApplication.DateSubmitted = DateTime.Now;
 
             try
             {

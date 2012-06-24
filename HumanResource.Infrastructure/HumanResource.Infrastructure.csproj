@@ -51,7 +51,6 @@
     <Compile Include="INotificationService.cs" />
     <Compile Include="JobApplicationFileRepository.cs" />
     <Compile Include="JobApplicationInMemRepository.cs" />
-    <Compile Include="JobApplicationNHibRepository.cs" />
     <Compile Include="JobApplicationSqlRepository.cs" />
     <Compile Include="JobApplicationStoreType.cs" />
     <Compile Include="NotificationService.cs" />
