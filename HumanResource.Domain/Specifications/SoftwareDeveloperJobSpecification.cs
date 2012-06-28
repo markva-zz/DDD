@@ -23,12 +23,12 @@ namespace HumanResource.Domain.Specifications
 
         public bool IsSatisfiedBy(object objectToByEvaluated)
         {
-            Person person = (Person)objectToByEvaluated;
+            //Person person = (Person)objectToByEvaluated;
 
-            HasDriverLicenseRule hasDriverLicense = new HasDriverLicenseRule(person);
-            RequiredNumberOfMcpsRule reqMcps = new RequiredNumberOfMcpsRule(person);
+            //HasDriverLicenseRule hasDriverLicense = new HasDriverLicenseRule(person);
+            //RequiredNumberOfMcpsRule reqMcps = new RequiredNumberOfMcpsRule(person);
 
-            return hasDriverLicense.IsValid() && reqMcps.IsValid();
+            return false; // hasDriverLicense.IsValid() && reqMcps.IsValid();
         }
     }
 }

@@ -45,7 +45,7 @@ namespace HumanResource.Presentation
             application.ContactInformation = applicant;
             application.Job = new SoftwareDeveloperJobSpecification();
             application.Skills = "I know almost everything and eager to learn what's left";
-            application.Age = 39;
+            application.DateOfBirth = new DateTime(1972, 8, 21);
 
             try
             {

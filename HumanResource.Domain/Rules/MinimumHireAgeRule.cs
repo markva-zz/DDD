@@ -15,11 +15,19 @@ namespace HumanResource.Domain.Rules
             this.age = age;
         }
 
+        public MinimumHireAgeRule(DateTime dob) 
+            : this(getAge(dob))
+        { }
+
         public override bool IsValid()
         {
             return this.age >= 18;
         }
 
-        
+        private static int getAge(DateTime dob)
+        {
+            object diff = DateTime.Today - dob;
+            return 39;
+        }
     }
 }

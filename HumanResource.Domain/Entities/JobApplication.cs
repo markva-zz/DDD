@@ -16,14 +16,17 @@ namespace HumanResource.Domain.Entities
         }
 
         private Guid jobApplicationID;
-        public Guid JobApplicationID { get { return this.jobApplicationID; } }
+        public Guid JobApplicationID 
+        { 
+            get { return this.jobApplicationID; } 
+        }
 
         public ContactInfo ContactInformation { get; set; }
         
         public Job Job { get; set; }
         
         public string Skills { get; set; }
-        public int Age { get; set; }
+        public DateTime DateOfBirth { get; set; }
         public DateTime DateSubmitted { get; set; } 
     }
 }

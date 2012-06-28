@@ -12,5 +12,6 @@ namespace HumanResource.Domain.ValueObjects
         public Address MailAddress { get; set; }
         public string PhoneNumber { get; set; }
         public string MobilePhoneNumber { get; set; }
+        
     }
 }

@@ -41,34 +41,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Employee.cs" />
-    <Compile Include="Entities\JobCandidate.cs" />
     <Compile Include="Entities\JobApplication.cs" />
-    <Compile Include="Entities\Person.cs" />
     <Compile Include="Events\IEvent.cs" />
     <Compile Include="Events\JobApplicationRegistredEvent.cs" />
     <Compile Include="Events\PersonHiredEvent.cs" />
     <Compile Include="Factories\JobApplicationFactory.cs" />
-    <Compile Include="Policies\EmploymentPolicy.cs" />
     <Compile Include="Policies\IPolicy.cs" />
     <Compile Include="Policies\PolicyBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IJobApplicationRepository.cs" />
-    <Compile Include="Rules\HasDriverLicenseRule.cs" />
     <Compile Include="Rules\IRule.cs" />
     <Compile Include="Rules\MinimumHireAgeRule.cs" />
-    <Compile Include="Rules\RequiredNumberOfMcpsRule.cs" />
     <Compile Include="Rules\RuleBase.cs" />
     <Compile Include="Services\JobApplicantService.cs" />
     <Compile Include="Specifications\InvalidJobApplicationSpecification.cs" />
+    <Compile Include="Specifications\SoftwareDeveloperJobSpecification.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ValueObjects\Address.cs" />
     <Compile Include="ValueObjects\ContactInfo.cs" />
-    <Compile Include="ValueObjects\DriverLicense.cs" />
     <Compile Include="Specifications\ISpecification.cs" />
     <Compile Include="ValueObjects\JobApplicationKey.cs" />
-    <Compile Include="ValueObjects\Mcp.cs" />
     <Compile Include="Specifications\StaffManagerJobSpecification.cs" />
-    <Compile Include="Specifications\SoftwareDeveloperJobSpecification.cs" />
     <Compile Include="ValueObjects\Job.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace HumanResource.Domain.Specifications
+namespace HumanResource.Domain.Factories
 {
-    public interface ISpecification
+    public class JobApplicationFactory
     {
-        
+
     }
 }

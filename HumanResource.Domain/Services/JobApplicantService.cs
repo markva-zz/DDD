@@ -26,7 +26,7 @@ namespace HumanResource.Domain.Services
         public virtual void Submit(JobApplication jobApplication)
         {
             // evaluate business rules/policies
-            RuleBase minHireAge = new MinimumHireAgeRule(jobApplication.Age);
+            RuleBase minHireAge = new MinimumHireAgeRule(jobApplication.DateOfBirth);
             if (!minHireAge.IsValid())
                 throw new ApplicationException(String.Format("{0} was violated", minHireAge.Description));
             
